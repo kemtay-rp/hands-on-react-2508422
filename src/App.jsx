@@ -28,6 +28,7 @@ function App() {
           <ListCast cast={cast} onChoice={(info) => { setMemberInfo(info) }} />
           {memberInfo && <Modals member={memberInfo} handleChange={(info) => { setMemberInfo(cast[info]) }} handleClose={() => { setMemberInfo(null) }} />}
           <button className='outline' onClick={()=> {alert ('Hi there!')}}>Click Me</button>
+          </hgroup>
       </div>
     </>
   )
